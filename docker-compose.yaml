@@ -4,7 +4,7 @@ services:
   
   db:
     image: postgres
-    
+
     environment:
 
       - "POSTGRES_HOST_AUTH_METHOD=trust"
@@ -23,5 +23,6 @@ services:
       - 8000:8000
 
     environment:
-      - "DJANGO_SECRET_KEY=django-insecure-b764$#(&o4o((cvy!z^nsseq5@erq#e^0%5r5a(%c24*f^*sde"
+      - "DJANGO_SECRET_KEY=django-insecure-b764$$#(&o4o((cvy!z^nsseq5@erq#e^0%5r5a(%c24*f^*sde"
+      - "DJANGO_DEBUG=True"
   

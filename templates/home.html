@@ -12,20 +12,23 @@
 
 <body>
 
-    <h1>Home Page</h1>
-    
-    {% if user.is_authenticated %}
-        <h3>Welcome {{ user.username|title }}</h3>
-
-    {% else %}
-
-    <a href="/accounts/signup" style="text-decoration:none">signup</a>
-    <a href="/accounts/login" style="text-decoration:none">login</a>
-
-    {% endif %}
-
+   
     {% block content %}
     
+
+        <h1>Home Page</h1>
+        
+        {% if user.is_authenticated %}
+            <h3>Welcome {{ user.username|title }}</h3>
+
+        {% else %}
+
+        <a href="/accounts/signup" style="text-decoration:none">signup</a>
+        <a href="/accounts/login" style="text-decoration:none">login</a>
+
+        {% endif %}
+
+
     {% endblock content %}
 
 
