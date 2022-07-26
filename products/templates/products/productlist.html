@@ -5,9 +5,12 @@
 {% endblock %}
 
 {% block content %}
+    <h1>Products List</h1>
     {% for product in products %}
-        <h1>{{ product.title }}</h1>
-        <p>{{ product.description }}</p>
+        <a href="{% url 'detailview' product.id %}">
+            <h1>{{ product.title }}</h1>
+            <p>{{ product.description }}</p>
+        </a>
     {% endfor %}
 
 {% endblock %}
