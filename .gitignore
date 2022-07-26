@@ -5,3 +5,4 @@ settings.py
 .dockerignore
 Dockerfile
 docker-compose.yaml
+.env
